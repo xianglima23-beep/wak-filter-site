@@ -1,16 +1,127 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAK Blue Series | Premium Genuine Quality Filtration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800;900&display=swap');
+        
+        :root {
+            --wak-red: #E31E24;
+            --lux-gold: #c5a059;
+            --lux-bg: #050505;
+            --lux-card: #0d0d0d;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--lux-bg);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .font-impact { font-family: 'Archivo Black', sans-serif; }
+        .text-gold { color: var(--lux-gold); }
+        .bg-gold { background-color: var(--lux-gold); }
+        .hero-title { line-height: 0.95; letter-spacing: -0.02em; }
+
+        .pill-badge {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: #999;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.4rem 1rem;
+            border-radius: 9999px;
+            text-transform: uppercase;
+        }
+
+        .btn-main {
+            background-color: var(--lux-gold);
+            color: black;
+            font-weight: 800;
+            padding: 1.25rem 2.5rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+        .btn-main:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(197, 160, 89, 0.3);
+        }
+
+        .glass-nav {
+            background: rgba(5, 5, 5, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .gold-glow {
+            box-shadow: 0 0 60px rgba(197, 160, 89, 0.1);
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            z-index: 100;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            animation: pulse-whatsapp 2s infinite;
+        }
+        @keyframes pulse-whatsapp {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-white/5">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="font-impact text-2xl tracking-tighter italic">WAK <span class="text-gold">ELITE</span></span>
+            </div>
+            <a href="https://wa.me/8615012338639" class="bg-gold text-black px-6 py-2 rounded text-[11px] font-black uppercase tracking-wider">
+                Get Free Quote
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
+        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="z-10">
+                <div class="mb-6">
+                    <span class="pill-badge border-gold/30 text-gold">CHINA'S #1 FILTRATION MANUFACTURER</span>
                 </div>
                 <h1 class="text-6xl md:text-8xl font-extrabold mb-8 hero-title">
-                    THE NEW <br> STANDARD IN <br> <span class="text-gold">PREMIUM FILTRATION.</span>
+                    WAK <span class="text-blue-500">Blue</span> <br>
+                    Precision <br>
+                    <span class="text-gold">Redefined.</span>
                 </h1>
                 <p class="text-gray-500 text-lg max-w-lg mb-10">
-                    WAK Blue Elite: Precision-engineered OEM-grade filters. Designed for wholesalers who demand perfection in performance and presentation.
+                    Premium factory-direct oil filters with genuine-standard packaging. Designed for high-end retail presence.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-6">
                     <a href="https://wa.me/8615012338639" class="btn-main text-center">Get Free Sample</a>
                 </div>
             </div>
-            
             <div class="relative flex justify-center">
                 <div class="w-64 h-80 md:w-96 md:h-[450px] gold-glow">
                     <img src="https://sc02.alicdn.com/kf/A3dc4d57b83a44a0aa4e5ac57de2eec33P.png" class="w-full h-full object-contain">
@@ -19,50 +130,38 @@
         </div>
     </section>
 
-
     <!-- Model Catalog -->
     <section class="py-32 container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
             <div class="bg-white/5 border border-white/10 p-6 rounded-2xl">
                 <img src="https://sc02.alicdn.com/kf/A7c34a3f7b2114b749fa8a5a577a09e02i.png" class="h-64 mx-auto mb-6 object-contain">
                 <h3 class="text-2xl font-black mb-2">15208-65F00</h3>
-                <p class="text-gray-500 text-sm mb-6">ELITE SERIES FOR NISSAN. Synthetic media with genuine-standard bypass valves.</p>
+                <p class="text-gray-500 text-sm mb-6">FOR NISSAN Series - Premium Genuine Quality.</p>
                 <a href="https://wa.me/8615012338639?text=Quote for 15208-65F00" class="block border border-gold/30 text-gold text-center py-3 rounded-lg hover:bg-gold hover:text-black">Inquire Price</a>
             </div>
-
-
             <div class="bg-white/5 border border-white/10 p-6 rounded-2xl">
                 <img src="https://sc02.alicdn.com/kf/A9d85dcf409374a0784932bfd468f7389J.png" class="h-64 mx-auto mb-6 object-contain">
                 <h3 class="text-2xl font-black mb-2">23303-64010</h3>
-                <p class="text-gray-500 text-sm mb-6">FUEL MASTER FOR TOYOTA. Advanced multi-stage separation for clean engine performance.</p>
+                <p class="text-gray-500 text-sm mb-6">FOR TOYOTA Fuel Filter - High Efficiency.</p>
                 <a href="https://wa.me/8615012338639?text=Quote for 23303-64010" class="block border border-gold/30 text-gold text-center py-3 rounded-lg hover:bg-gold hover:text-black">Inquire Price</a>
             </div>
-
-
             <div class="bg-white/5 border border-white/10 p-6 rounded-2xl">
                 <img src="https://sc02.alicdn.com/kf/A09e80b734fbe4e2aa8fc4a967e2eccfbU.png" class="h-64 mx-auto mb-6 object-contain">
                 <h3 class="text-2xl font-black mb-2">26300-35505</h3>
-                <p class="text-gray-500 text-sm mb-6">PRECISION CORE FOR HYUNDAI. High-pressure durability for next-generation engines.</p>
+                <p class="text-gray-500 text-sm mb-6">FOR HYUNDAI Series - Precision Engineered.</p>
                 <a href="https://wa.me/8615012338639?text=Quote for 26300-35505" class="block border border-gold/30 text-gold text-center py-3 rounded-lg hover:bg-gold hover:text-black">Inquire Price</a>
             </div>
-
-
         </div>
     </section>
 
-
     <footer class="py-20 bg-wak-red text-center">
-        <h2 class="text-4xl font-black mb-8">ELEVATE YOUR WHOLESALE PORTFOLIO TODAY.</h2>
+        <h2 class="text-4xl font-black mb-8">REDEFINE YOUR WHOLESALE STANDARDS.</h2>
         <p class="text-black/60 uppercase tracking-widest font-bold">Yiwu Lujiesen Auto Parts Co., Ltd.</p>
     </footer>
-
 
     <a href="https://wa.me/8615012338639" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-
 </body>
 </html>
-
