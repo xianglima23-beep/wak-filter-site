@@ -7,4 +7,10 @@
 <priority>1.0</priority>
 </url>
 
+<url>
+<loc>https://wak-filter.com/oil-filter</loc>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+
 </urlset>
