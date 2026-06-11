@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wak-filter.com/sitemap.xml
