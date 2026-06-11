@@ -8,7 +8,25 @@
 </url>
 
 <url>
-<loc>https://wak-filter.com/oil-filter</loc>
+<loc>https://wak-filter.com/oil-filter/</loc>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://wak-filter.com/fuel-filter/</loc>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://wak-filter.com/air-filter/</loc>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://wak-filter.com/cabin-filter/</loc>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
