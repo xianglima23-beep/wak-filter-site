@@ -211,11 +211,55 @@
                 </div>
             </div>
             <div class="relative flex justify-center">
-               <div class="w-80 h-80 md:w-[540px] md:h-[540px] gold-glow">
-                 <img src="6.15.png" alt="Automotive oil air fuel and cabin filter manufacturer" class="w-full h-full object-contain">
-                </div>
-            </div>
+
+    <div class="relative w-80 h-80 md:w-[540px] md:h-[540px]
+                overflow-hidden rounded-2xl gold-glow">
+
+        <!-- 工厂背景图片 -->
+        <img src="factory3.jpg"
+             alt="WAK ELITE automotive filter factory"
+             class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- 左深右浅的黑色渐变 -->
+        <div class="absolute inset-0"
+             style="background: linear-gradient(
+                 90deg,
+                 rgba(0,0,0,0.82) 0%,
+                 rgba(0,0,0,0.48) 45%,
+                 rgba(0,0,0,0.16) 100%
+             );">
         </div>
+
+        <!-- 底部黑色渐变 -->
+        <div class="absolute inset-0"
+             style="background: linear-gradient(
+                 0deg,
+                 rgba(0,0,0,0.72) 0%,
+                 rgba(0,0,0,0.08) 55%,
+                 rgba(0,0,0,0.22) 100%
+             );">
+        </div>
+
+        <!-- 原来的滤清器产品组合图 -->
+        <img src="6.15.png"
+             alt="Automotive oil air fuel and cabin filter manufacturer"
+             class="relative z-10 w-full h-full object-contain p-3 md:p-6"
+             style="
+                 -webkit-mask-image: radial-gradient(
+                     ellipse at center,
+                     black 56%,
+                     transparent 89%
+                 );
+                 mask-image: radial-gradient(
+                     ellipse at center,
+                     black 56%,
+                     transparent 89%
+                 );
+             ">
+
+    </div>
+
+</div>
     </section>
 
     <!-- Model Catalog -->
