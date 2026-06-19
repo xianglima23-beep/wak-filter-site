@@ -1,38 +1,834 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact WAK ELITE | Auto Filter Manufacturer in China</title>
-  <meta name="description" content="Contact WAK ELITE, a professional auto filter manufacturer in China, for OEM oil filters, air filters, fuel filters and cabin filters. Get factory pricing, free samples and custom packaging support.">
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact WAK ELITE | Auto Filter Manufacturer in China</title>
+
+    <meta name="description" content="Contact WAK ELITE for OEM oil filters, air filters, fuel filters and cabin filters. Send your OEM number, quantity and packaging requirements for factory pricing.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f5f7;
+            color: #151515;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        /* NAVIGATION */
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #0d0d0d;
+            color: #ffffff;
+            border-bottom: 1px solid #292929;
+        }
+
+        .nav-inner {
+            max-width: 1180px;
+            min-height: 72px;
+            margin: 0 auto;
+            padding: 0 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 26px;
+        }
+
+        .brand {
+            font-size: 22px;
+            font-weight: 800;
+            text-decoration: none;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .brand span {
+            color: #f0b429;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            padding: 27px 0 24px;
+            border-bottom: 3px solid transparent;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            border-bottom-color: #f0b429;
+        }
+
+        .nav-quote {
+            padding: 12px 19px;
+            border-radius: 6px;
+            background: #f0b429;
+            color: #111111;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .nav-quote:hover {
+            background: #ffca45;
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 74px 22px 78px;
+            background: linear-gradient(120deg, #050505, #1c1c1c);
+            color: #ffffff;
+        }
+
+        .hero-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .eyebrow {
+            margin: 0 0 14px;
+            color: #f0b429;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 {
+            margin: 0 auto 18px;
+            font-size: 48px;
+            line-height: 1.15;
+        }
+
+        .hero-description {
+            max-width: 820px;
+            margin: 0 auto;
+            color: #e6e6e6;
+            font-size: 17px;
+            line-height: 1.75;
+        }
+
+        .hero-features {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .hero-features span {
+            padding: 9px 15px;
+            border: 1px solid #3e3e3e;
+            border-radius: 30px;
+            background: #181818;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        /* MAIN */
+
+        .main-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 66px 22px 80px;
+        }
+
+        .section-heading {
+            max-width: 820px;
+            margin: 0 auto 34px;
+            text-align: center;
+        }
+
+        .section-label {
+            margin: 0 0 8px;
+            color: #666666;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+        }
+
+        .section-heading h2 {
+            margin: 0 0 14px;
+            font-size: 34px;
+            line-height: 1.25;
+        }
+
+        .section-heading p {
+            margin: 0;
+            color: #666666;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* CONTACT LAYOUT */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.85fr 1.35fr;
+            gap: 30px;
+            align-items: start;
+        }
+
+        .contact-info,
+        .inquiry-form {
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 15px;
+            box-shadow: 0 9px 28px rgba(0, 0, 0, 0.06);
+        }
+
+        .contact-info {
+            padding: 34px 30px;
+        }
+
+        .contact-info h2 {
+            margin: 0 0 12px;
+            font-size: 27px;
+        }
+
+        .contact-intro {
+            margin: 0 0 26px;
+            color: #626262;
+            font-size: 15px;
+            line-height: 1.75;
+        }
+
+        .contact-item {
+            margin-bottom: 16px;
+            padding: 19px 20px;
+            border-left: 4px solid #f0b429;
+            border-radius: 7px;
+            background: #f7f7f7;
+        }
+
+        .contact-item strong {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 15px;
+        }
+
+        .contact-item a,
+        .contact-item span {
+            color: #606060;
+            font-size: 14px;
+            line-height: 1.6;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-item a:hover {
+            color: #a96f00;
+            text-decoration: underline;
+        }
+
+        .direct-whatsapp {
+            display: block;
+            margin-top: 24px;
+            padding: 14px 20px;
+            border-radius: 6px;
+            background: #20c96b;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        .direct-whatsapp:hover {
+            background: #17b85d;
+        }
+
+        /* FORM */
+
+        .inquiry-form {
+            padding: 34px 34px 38px;
+        }
+
+        .inquiry-form h2 {
+            margin: 0 0 8px;
+            font-size: 27px;
+        }
+
+        .form-intro {
+            margin: 0 0 26px;
+            color: #626262;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #d5d5d5;
+            border-radius: 6px;
+            background: #ffffff;
+            color: #151515;
+            font-family: inherit;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #f0b429;
+            box-shadow: 0 0 0 3px rgba(240, 180, 41, 0.15);
+        }
+
+        .form-group textarea {
+            min-height: 145px;
+            resize: vertical;
+        }
+
+        .required {
+            color: #c82828;
+        }
+
+        .submit-button {
+            width: 100%;
+            margin-top: 22px;
+            padding: 15px 22px;
+            border: 0;
+            border-radius: 6px;
+            background: #111111;
+            color: #ffffff;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        .submit-button:hover {
+            background: #f0b429;
+            color: #111111;
+        }
+
+        .form-note {
+            margin: 15px 0 0;
+            color: #777777;
+            font-size: 12px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* PROCESS */
+
+        .process-section {
+            margin-top: 70px;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .process-card {
+            padding: 27px 23px;
+            border: 1px solid #e5e5e5;
+            border-radius: 14px;
+            background: #ffffff;
+        }
+
+        .process-number {
+            width: 38px;
+            height: 38px;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #111111;
+            color: #f0b429;
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .process-card h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .process-card p {
+            margin: 0;
+            color: #626262;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* FOOTER */
+
+        .site-footer {
+            padding: 31px 20px;
+            background: #050505;
+            color: #dddddd;
+            text-align: center;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .site-footer p {
+            margin: 3px 0;
+        }
+
+        .site-footer strong {
+            color: #ffffff;
+        }
+
+        /* WHATSAPP */
+
+        .whatsapp-float {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            z-index: 999;
+            padding: 13px 19px;
+            border-radius: 30px;
+            background: #20c96b;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 800;
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 980px) {
+            .nav-inner {
+                flex-direction: column;
+                padding-top: 18px;
+                padding-bottom: 18px;
+            }
+
+            .nav-links a {
+                padding: 10px 0;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .hero {
+                padding: 55px 18px 58px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+            .nav-links {
+                gap: 16px;
+            }
+
+            .form-grid,
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .inquiry-form,
+            .contact-info {
+                padding: 27px 21px;
+            }
+
+            .section-heading h2 {
+                font-size: 28px;
+            }
+
+            .whatsapp-float {
+                right: 12px;
+                bottom: 12px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>Contact WAK ELITE Auto Filter Manufacturer</h1>
-  <p>
-Contact our sales team for OEM oil filters, air filters, fuel filters and cabin filters. We support low MOQ, free samples, custom packaging and global shipping.
-</p>
+<header class="site-header">
+    <div class="nav-inner">
 
-<p>Email: sales@wak-filter.com</p>
-<p>WhatsApp: +86 15012338639</p>
-<p>Address: Yiwu Lujiesen Auto Parts Co., Ltd., China</p>
+        <a class="brand" href="index.html">
+            <span>WAK</span> ELITE
+        </a>
 
-<h2>Inquiry Form</h2>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="oil-filter.html">Oil Filter</a>
+            <a href="air-filter.html">Air Filter</a>
+            <a href="fuel-filter.html">Fuel Filter</a>
+            <a href="factory.html">Factory</a>
+            <a href="about-us.html">About</a>
+            <a class="active" href="contact-us.html">Contact</a>
+        </nav>
 
-<form action="#" method="post">
-<label>Name:</label><br>
-<input type="text" name="name"><br>
-<label>Email:</label><br>
-<input type="email" name="email"><br>
-<label>WhatsApp:</label><br>
-<input type="text" name="whatsapp"><br>
-<label>Country:</label><br>
-<input type="text" name="country"><br>
-<label>Product Model:</label><br>
-<input type="text" name="model"><br>
-<label>Message:</label><br>
-<textarea name="message"></textarea><br>
-<input type="submit" value="Send Inquiry">
-</form>
+        <a class="nav-quote"
+           href="https://wa.me/8615012338639?text=Hello%2C%20I%20would%20like%20to%20request%20a%20quotation"
+           target="_blank"
+           rel="noopener">
+            Get Free Quote
+        </a>
+
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-inner">
+
+        <p class="eyebrow">CONTACT WAK ELITE</p>
+
+        <h1>Request an Automotive Filter Quotation</h1>
+
+        <p class="hero-description">
+            Send us the OEM reference number, vehicle application,
+            required quantity, packaging requirements and destination country.
+            Our sales team will provide product and wholesale pricing information.
+        </p>
+
+        <div class="hero-features">
+            <span>Oil Filters</span>
+            <span>Air Filters</span>
+            <span>Fuel Filters</span>
+            <span>Cabin Filters</span>
+        </div>
+
+    </div>
+</section>
+
+<main class="main-container">
+
+    <div class="section-heading">
+        <p class="section-label">CONTACT & INQUIRY</p>
+        <h2>Talk With Our Sales Team</h2>
+        <p>
+            Complete the inquiry form or contact us directly by WhatsApp
+            and email for product availability and factory pricing.
+        </p>
+    </div>
+
+    <section class="contact-grid">
+
+        <aside class="contact-info">
+
+            <h2>Contact Information</h2>
+
+            <p class="contact-intro">
+                Contact WAK ELITE for OEM automotive filters,
+                private-label packaging and wholesale orders.
+            </p>
+
+            <div class="contact-item">
+                <strong>Email</strong>
+                <a href="mailto:sales@wak-filter.com">
+                    sales@wak-filter.com
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/8615012338639"
+                   target="_blank"
+                   rel="noopener">
+                    +86 150 1233 8639
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>Company</strong>
+                <span>Yiwu Lujiesen Auto Parts Co., Ltd.</span>
+            </div>
+
+            <div class="contact-item">
+                <strong>Location</strong>
+                <span>Yiwu, Zhejiang, China</span>
+            </div>
+
+            <a class="direct-whatsapp"
+               href="https://wa.me/8615012338639?text=Hello%2C%20I%20would%20like%20to%20request%20an%20automotive%20filter%20quotation"
+               target="_blank"
+               rel="noopener">
+                Chat With Us on WhatsApp
+            </a>
+
+        </aside>
+
+        <section class="inquiry-form">
+
+            <h2>Send Your Inquiry</h2>
+
+            <p class="form-intro">
+                Fields marked with an asterisk are required.
+                Clicking the button will open WhatsApp with your inquiry details.
+            </p>
+
+            <form id="whatsappInquiryForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="name">
+                            Name <span class="required">*</span>
+                        </label>
+                        <input id="name"
+                               name="name"
+                               type="text"
+                               placeholder="Your name"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">
+                            Company
+                        </label>
+                        <input id="company"
+                               name="company"
+                               type="text"
+                               placeholder="Company name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            Email
+                        </label>
+                        <input id="email"
+                               name="email"
+                               type="email"
+                               placeholder="name@company.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="whatsapp">
+                            WhatsApp
+                        </label>
+                        <input id="whatsapp"
+                               name="whatsapp"
+                               type="text"
+                               placeholder="+Country code and number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">
+                            Country <span class="required">*</span>
+                        </label>
+                        <input id="country"
+                               name="country"
+                               type="text"
+                               placeholder="Destination country"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product">
+                            Filter Category <span class="required">*</span>
+                        </label>
+                        <select id="product"
+                                name="product"
+                                required>
+                            <option value="">Select a filter category</option>
+                            <option value="Oil Filter">Oil Filter</option>
+                            <option value="Air Filter">Air Filter</option>
+                            <option value="Fuel Filter">Fuel Filter</option>
+                            <option value="Cabin Filter">Cabin Filter</option>
+                            <option value="Multiple Filter Categories">
+                                Multiple Filter Categories
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="model">
+                            OEM Number / Product Model
+                        </label>
+                        <input id="model"
+                               name="model"
+                               type="text"
+                               placeholder="Example: 90915-10004">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">
+                            Required Quantity
+                        </label>
+                        <input id="quantity"
+                               name="quantity"
+                               type="text"
+                               placeholder="Example: 500 pcs">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">
+                            Message <span class="required">*</span>
+                        </label>
+                        <textarea id="message"
+                                  name="message"
+                                  placeholder="Please describe your product, packaging and delivery requirements."
+                                  required></textarea>
+                    </div>
+
+                </div>
+
+                <button class="submit-button" type="submit">
+                    Send Inquiry on WhatsApp
+                </button>
+
+                <p class="form-note">
+                    Your inquiry will not be published on the website.
+                    WhatsApp will open after you click the button.
+                </p>
+
+            </form>
+
+        </section>
+
+    </section>
+
+    <section class="process-section">
+
+        <div class="section-heading">
+            <p class="section-label">HOW TO GET A QUOTE</p>
+            <h2>Simple Wholesale Inquiry Process</h2>
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-card">
+                <div class="process-number">01</div>
+                <h3>Send Product Information</h3>
+                <p>
+                    Share your OEM number, vehicle model,
+                    filter category and required quantity.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="process-number">02</div>
+                <h3>Confirm Requirements</h3>
+                <p>
+                    Confirm packaging, logo, destination country
+                    and delivery requirements with our sales team.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <div class="process-number">03</div>
+                <h3>Receive Factory Pricing</h3>
+                <p>
+                    We will check availability and provide product,
+                    packaging and delivery information.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p><strong>WAK ELITE</strong></p>
+    <p>Yiwu Lujiesen Auto Parts Co., Ltd.</p>
+    <p>OEM Oil Filters · Air Filters · Fuel Filters · Cabin Filters</p>
+</footer>
+
+<a class="whatsapp-float"
+   href="https://wa.me/8615012338639"
+   target="_blank"
+   rel="noopener">
+    WhatsApp
+</a>
+
+<script>
+    document.getElementById("whatsappInquiryForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const company = document.getElementById("company").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const whatsapp = document.getElementById("whatsapp").value.trim();
+        const country = document.getElementById("country").value.trim();
+        const product = document.getElementById("product").value;
+        const model = document.getElementById("model").value.trim();
+        const quantity = document.getElementById("quantity").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        const inquiryText =
+`Hello, I would like to request an automotive filter quotation.
+
+Name: ${name}
+Company: ${company || "Not provided"}
+Email: ${email || "Not provided"}
+WhatsApp: ${whatsapp || "Not provided"}
+Country: ${country}
+Filter Category: ${product}
+OEM Number / Model: ${model || "Not provided"}
+Required Quantity: ${quantity || "Not provided"}
+
+Message:
+${message}`;
+
+        const whatsappUrl =
+            "https://wa.me/8615012338639?text=" +
+            encodeURIComponent(inquiryText);
+
+        window.open(whatsappUrl, "_blank");
+    });
+</script>
 
 </body>
 </html>
