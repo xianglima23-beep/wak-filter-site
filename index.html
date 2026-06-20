@@ -210,81 +210,117 @@
 </a>
                 </div>
             </div>
-           <div class="relative flex justify-center lg:justify-end">
+           <div class="relative flex justify-center lg:justify-end lg:-mr-24">
 
     <div class="relative
-            w-[390px] h-[450px]
-            md:w-[720px] md:h-[600px]
-            lg:w-[860px] lg:h-[650px]
-            lg:-translate-x-20
-            overflow-hidden rounded-2xl">
+                w-[390px] h-[450px]
+                md:w-[740px] md:h-[590px]
+                lg:w-[900px] lg:h-[640px]
+                overflow-visible">
 
-        <!-- 放大的工厂背景 -->
+        <!-- 大幅工厂背景：四周自然融入黑色 -->
         <img src="factory1.png"
              alt="WAK ELITE automotive filter production factory"
-             class="absolute inset-0 w-full h-full object-cover scale-110"
-             style="filter: brightness(0.72) contrast(1.08);">
+             class="absolute inset-0 w-full h-full object-cover object-center"
+             style="
+                 filter: brightness(0.48) contrast(1.08) saturate(0.75);
+                 opacity: 0.82;
+                 -webkit-mask-image: linear-gradient(
+                     90deg,
+                     transparent 0%,
+                     rgba(0,0,0,0.38) 12%,
+                     black 35%,
+                     black 86%,
+                     transparent 100%
+                 );
+                 mask-image: linear-gradient(
+                     90deg,
+                     transparent 0%,
+                     rgba(0,0,0,0.38) 12%,
+                     black 35%,
+                     black 86%,
+                     transparent 100%
+                 );
+             ">
 
-        <!-- 左侧和四周逐渐融入黑色 -->
+        <!-- 左侧黑色渐变，与文字区域融合 -->
         <div class="absolute inset-0"
              style="
                  background:
                  linear-gradient(
                      90deg,
-                     rgba(0,0,0,0.82) 0%,
-                     rgba(0,0,0,0.35) 34%,
-                     rgba(0,0,0,0.08) 68%,
-                     rgba(0,0,0,0.42) 100%
+                     rgba(0,0,0,0.98) 0%,
+                     rgba(0,0,0,0.76) 23%,
+                     rgba(0,0,0,0.20) 58%,
+                     rgba(0,0,0,0.30) 100%
                  );
              ">
         </div>
 
-        <!-- 四周暗角渐变 -->
+        <!-- 四周暗角 -->
         <div class="absolute inset-0"
              style="
                  background:
                  radial-gradient(
-                     ellipse at 58% 48%,
-                     rgba(0,0,0,0) 25%,
-                     rgba(0,0,0,0.12) 55%,
+                     ellipse at 68% 48%,
+                     rgba(0,0,0,0) 30%,
+                     rgba(0,0,0,0.14) 58%,
                      rgba(0,0,0,0.88) 100%
                  );
              ">
         </div>
 
-        <!-- 底部渐变 -->
-        <div class="absolute inset-0"
+        <!-- 产品后方柔和金色光晕 -->
+        <div class="absolute z-[5]
+                    right-[5%] bottom-[7%]
+                    w-[62%] h-[68%]
+                    rounded-full"
              style="
-                 background:
-                 linear-gradient(
-                     0deg,
-                     rgba(0,0,0,0.78) 0%,
-                     rgba(0,0,0,0.08) 45%,
-                     rgba(0,0,0,0.20) 100%
+                 background: radial-gradient(
+                     ellipse at center,
+                     rgba(197,160,89,0.22) 0%,
+                     rgba(197,160,89,0.08) 43%,
+                     transparent 74%
                  );
+                 filter: blur(20px);
              ">
         </div>
 
-        <!-- 前面的滤清器组合图 -->
-            <img src="6.15.png" alt="Automotive oil air fuel and cabin filter manufacturer"
-            class="relative z-10 w-full h-full object-contain p-3 md:p-6 md:translate-x-10"
+        <!-- 前景产品组合图 -->
+        <img src="6.15.png"
+             alt="Automotive oil air fuel and cabin filter manufacturer"
+             class="absolute z-10
+                    right-[1%] bottom-[1%]
+                    w-[70%] h-[86%]
+                    object-contain"
              style="
                  -webkit-mask-image: radial-gradient(
-                     ellipse at center,
+                     ellipse at 52% 54%,
                      black 56%,
-                     transparent 89%
+                     rgba(0,0,0,0.92) 70%,
+                     transparent 92%
                  );
                  mask-image: radial-gradient(
-                     ellipse at center,
+                     ellipse at 52% 54%,
                      black 56%,
-                     transparent 89%
+                     rgba(0,0,0,0.92) 70%,
+                     transparent 92%
                  );
+                 filter: drop-shadow(0 22px 32px rgba(0,0,0,0.65));
              ">
+
+        <!-- 工厂标签 -->
+        <div class="absolute z-20 right-[6%] bottom-[5%]
+                    px-4 py-2 rounded-full
+                    border border-gold/30
+                    bg-black/75 backdrop-blur-md
+                    text-gold text-[11px] font-bold tracking-widest uppercase">
+            Real Factory · OEM Production
+        </div>
 
     </div>
 
 </div>
-    </section>
 
     <!-- Model Catalog -->
     <section class="py-16 container mx-auto px-6">
