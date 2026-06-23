@@ -51,13 +51,42 @@
             background: rgba(5, 5, 5, 0.8);
             backdrop-filter: blur(10px);
         }
-       .glass-nav a[href$=".html"] {
-  color: #ffffff;
-  text-decoration: none;
+      nav.glass-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0 10px;
+    text-decoration: none;
 }
 
-.glass-nav a[href$=".html"]:hover {
-  color: var(--lux-gold);
+nav.glass-nav a:not(.btn-main) {
+    color: #ffffff !important;
+}
+
+nav.glass-nav a:not(.btn-main):hover {
+    color: var(--lux-gold) !important;
+}
+
+nav.glass-nav a[href^="https://wa.me/"] {
+    background-color: var(--lux-gold) !important;
+    color: #000000 !important;
+    min-height: 44px;
+    padding: 0 18px;
+    border-radius: 6px;
+    font-weight: 800;
+}
+
+a[href="factory.html"].inline-block,
+a[href="certificates.html"].inline-block {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 12px 32px;
+    background-color: #050505 !important;
+    color: #ffffff !important;
 }
         .gold-glow {
             box-shadow: 0 0 60px rgba(197, 160, 89, 0.1);
@@ -173,6 +202,7 @@
             </a>
         </div>
     </nav>
+   <main>
 
     <!-- Hero Section -->
     <section class="pt-28 pb-6 flex items-center relative overflow-hidden">
@@ -600,6 +630,7 @@
     </div>
 </section>
 
+      </main>
     <footer class="py-20 bg-wak-red text-center">
         <h2 class="text-4xl font-black mb-8">REDEFINE YOUR WHOLESALE STANDARDS.</h2>
         <p class="text-black/60 uppercase tracking-widest font-bold">Yiwu Lujiesen Auto Parts Co., Ltd.</p>
