@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="msvalidate.01" content="F4BFAF9EA4E241013BE9783BDB2E02C6" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Auto Filter Manufacturer China | OEM Oil, Air & Fuel Filters</title>
    <meta name="description" content="China auto filter manufacturer supplying OEM oil filters, air filters, fuel filters and cabin filters. Low MOQ, free samples, custom packaging and global shipping.">
    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
+  
+
+  
+   <style> 
+      @media (max-width: 1023px) {
+  .desktop-nav-links,
+  .desktop-nav-quote {
+    display: none !important;
+  }
+
+  .mobile-nav-menu {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .desktop-nav-links {
+    display: flex !important;
+  }
+
+  .desktop-nav-quote {
+    display: inline-block !important;
+  }
+
+  .mobile-nav-menu {
+    display: none !important;
+  }
+}
         :root {
             --wak-red: #E31E24;
             --lux-gold: #c5a059;
@@ -188,7 +215,7 @@ a[href="certificates.html"].inline-block {
             <div class="flex items-center space-x-2">
                 <span class="font-impact text-2xl tracking-tighter italic">WAK <span class="text-gold">ELITE</span></span>
             </div>
-           <div class="flex items-center gap-5 text-xs xl:text-sm text-gray-300">
+           <div class="desktop-nav-links hidden lg:flex items-center gap-5 text-xs xl:text-sm text-gray-300">
     <a href="index.html" class="hover:text-gold transition">Home</a>
     <a href="oil-filter.html" class="hover:text-gold transition">Oil Filter</a>
     <a href="air-filter.html" class="hover:text-gold transition">Air Filter</a>
@@ -198,10 +225,10 @@ a[href="certificates.html"].inline-block {
     <a href="about-us.html" class="hover:text-gold transition">About</a>
     <a href="contact-us.html" class="hover:text-gold transition">Contact</a>
 </div>
-            <a href="https://wa.me/8615012338639" class="hidden lg:inline-block bg-gold text-black px-6 py-2 rounded text-[11px] font-black uppercase tracking-wider">
+            <a href="https://wa.me/8615012338639" class="desktop-nav-quote hidden lg:inline-block bg-gold text-black px-6 py-2 rounded text-[11px] font-black uppercase tracking-wider"
                 Get Factory Quote
             </a>
-           <details class="relative lg:hidden">
+           <details class="mobile-nav-menu relative lg:hidden">
   <summary class="cursor-pointer border border-white/30 rounded-lg px-4 py-2 text-sm font-bold text-white">
     ☰ Menu
   </summary>
