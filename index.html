@@ -225,14 +225,23 @@ a[href="certificates.html"].inline-block {
   content: "";
 }
 
-.mobile-menu-icon::before {
-  content: "☰";
+.menu-icon-closed,
+.menu-icon-open {
   font-size: 22px;
   font-weight: 700;
+  line-height: 1;
 }
 
-.mobile-nav-menu[open] .mobile-menu-icon::before {
-  content: "✕";
+.menu-icon-open {
+  display: none;
+}
+
+.mobile-nav-menu[open] .menu-icon-closed {
+  display: none;
+}
+
+.mobile-nav-menu[open] .menu-icon-open {
+  display: inline;
 }
     </style>
 </head>
@@ -253,12 +262,14 @@ a[href="certificates.html"].inline-block {
     <a href="about-us.html" class="hover:text-gold transition">About</a>
     <a href="contact-us.html" class="hover:text-gold transition">Contact</a>
 </div>
-            <a href="https://wa.me/8615012338639" class="desktop-nav-quote hidden lg:inline-block bg-gold text-black px-6 py-2 rounded text-[11px] font-black uppercase tracking-wider"
-                Get Factory Quote
-            </a>
+           <a href="https://wa.me/8615012338639"
+   class="desktop-nav-quote hidden lg:inline-block bg-gold text-black px-6 py-2 rounded text-[11px] font-black uppercase tracking-wider">
+  Get Factory Quote
+</a>
            <details class="mobile-nav-menu relative lg:hidden">
 <summary class="mobile-menu-toggle" aria-label="Open navigation menu">
-  <span class="mobile-menu-icon"></span>
+  <span class="menu-icon-closed" aria-hidden="true">☰</span>
+  <span class="menu-icon-open" aria-hidden="true">✕</span>
 </summary>
 
   <div class="absolute right-0 mt-3 w-56 rounded-xl border border-white/10 bg-black p-5 shadow-2xl">
