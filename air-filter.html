@@ -473,14 +473,22 @@
       }
     }
 
-    @media (max-width: 720px) {
-      .nav-quote {
-        display: none;
-      }
+   @media (max-width: 720px) {
+  .nav-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 
-      .nav-links {
-        gap: 13px;
-      }
+  .nav-links,
+  .nav-quote {
+    display: none;
+  }
+
+  .mobile-nav-menu {
+    display: block;
+  }
 
       .nav-links a {
         font-size: 13px;
@@ -537,6 +545,89 @@
         font-size: 14px;
       }
     }
+    .mobile-nav-menu {
+  display: none;
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  cursor: pointer;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.mobile-menu-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.mobile-menu-toggle::marker {
+  content: "";
+}
+
+.menu-icon-open {
+  display: none;
+}
+
+.mobile-nav-menu[open] .menu-icon-closed {
+  display: none;
+}
+
+.mobile-nav-menu[open] .menu-icon-open {
+  display: inline;
+}
+
+.mobile-menu-panel {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  z-index: 100;
+  width: 240px;
+  padding: 20px;
+  border: 1px solid #333333;
+  border-radius: 14px;
+  background: #0b0b0b;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+.mobile-menu-panel a {
+  display: block;
+  padding: 10px 0;
+  color: #dddddd;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mobile-menu-panel a:hover,
+.mobile-menu-panel a.active {
+  color: #f0b429;
+}
+
+.mobile-menu-panel .mobile-quote {
+  margin-top: 12px;
+  padding: 13px 16px;
+  border-radius: 7px;
+  background: #f0b429;
+  color: #111111;
+  text-align: center;
+  font-weight: 800;
+}
+    @media (max-width: 720px) {
+  .mobile-nav-menu {
+    display: block;
+  }
+}
   </style>
 </head>
 
@@ -554,6 +645,7 @@
         <a href="oil-filter.html">Oil Filter</a>
         <a class="active" href="air-filter.html">Air Filter</a>
         <a href="fuel-filter.html">Fuel Filter</a>
+        <a href="cabin-filter.html">Cabin Filter</a>
         <a href="factory.html">Factory</a>
         <a href="about-us.html">About</a>
         <a href="contact-us.html">Contact</a>
@@ -565,6 +657,34 @@
          rel="noopener">
         Get Free Quote
       </a>
+      <details class="mobile-nav-menu">
+
+  <summary class="mobile-menu-toggle"
+           aria-label="Open navigation menu">
+    <span class="menu-icon-closed" aria-hidden="true">☰</span>
+    <span class="menu-icon-open" aria-hidden="true">✕</span>
+  </summary>
+
+  <div class="mobile-menu-panel">
+
+    <a href="index.html">Home</a>
+    <a href="oil-filter.html">Oil Filter</a>
+    <a href="air-filter.html" class="active">Air Filter</a>
+    <a href="fuel-filter.html">Fuel Filter</a>
+    <a href="cabin-filter.html">Cabin Filter</a>
+    <a href="factory.html">Factory</a>
+    <a href="about-us.html">About</a>
+    <a href="contact-us.html">Contact</a>
+
+    <a href="https://wa.me/8615012338639"
+       class="mobile-quote"
+       target="_blank"
+       rel="noopener">
+      Get Free Quote
+    </a>
+
+  </div>
+</details>
 
     </div>
   </header>
