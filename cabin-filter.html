@@ -27,6 +27,42 @@
   .bg-gold {
     background-color: var(--wak-gold);
   }
+    .mobile-menu-toggle {
+  list-style: none;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  padding: 0.65rem 0.9rem;
+  color: white;
+  line-height: 1;
+}
+
+.mobile-menu-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.mobile-menu-toggle::marker {
+  content: "";
+}
+
+.menu-icon-closed,
+.menu-icon-open {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.menu-icon-open {
+  display: none;
+}
+
+.mobile-nav-menu[open] .menu-icon-closed {
+  display: none;
+}
+
+.mobile-nav-menu[open] .menu-icon-open {
+  display: inline;
+}
 </style>
 </head>
 <body>
@@ -54,8 +90,36 @@
        class="hidden lg:inline-block bg-gold text-black px-5 py-3 rounded-lg text-xs font-bold uppercase">
       Get Factory Quote
     </a>
+    <details class="mobile-nav-menu relative lg:hidden">
+
+  <summary class="mobile-menu-toggle"
+           aria-label="Open navigation menu">
+    <span class="menu-icon-closed" aria-hidden="true">☰</span>
+    <span class="menu-icon-open" aria-hidden="true">✕</span>
+  </summary>
+
+  <div class="absolute right-0 mt-3 w-56 rounded-2xl border border-white/10 bg-black p-5 shadow-2xl">
+
+    <div class="flex flex-col gap-4 text-sm text-gray-200">
+      <a href="index.html" class="hover:text-gold">Home</a>
+      <a href="oil-filter.html" class="hover:text-gold">Oil Filter</a>
+      <a href="air-filter.html" class="hover:text-gold">Air Filter</a>
+      <a href="fuel-filter.html" class="hover:text-gold">Fuel Filter</a>
+      <a href="cabin-filter.html" class="text-gold">Cabin Filter</a>
+      <a href="factory.html" class="hover:text-gold">Factory</a>
+      <a href="about-us.html" class="hover:text-gold">About</a>
+      <a href="contact-us.html" class="hover:text-gold">Contact</a>
+    </div>
+
+    <a href="contact-us.html"
+       class="mt-5 block rounded-lg bg-gold px-4 py-3 text-center font-bold text-black">
+      Get Factory Quote
+    </a>
 
   </div>
+</details>
+    </div>
+  
 </nav>
   <main>
 
