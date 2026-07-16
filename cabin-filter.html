@@ -63,6 +63,41 @@
 .mobile-nav-menu[open] .menu-icon-open {
   display: inline;
 }
+    .whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 24px;
+  z-index: 60;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: #25d366;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow:
+    0 0 0 8px rgba(37, 211, 102, 0.12),
+    0 12px 30px rgba(37, 211, 102, 0.3);
+  transition: transform 0.25s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+@media (max-width: 640px) {
+  .whatsapp-float {
+    right: 14px;
+    bottom: 20px;
+    width: 54px;
+    height: 54px;
+    font-size: 27px;
+  }
+}
 </style>
 </head>
 <body>
@@ -418,8 +453,56 @@
 
   </div>
 </section>
+    <!-- Factory Direct Quotation -->
+<section class="border-t border-white/10 bg-black py-20 text-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+
+    <p class="text-gold text-sm font-bold tracking-[0.2em] uppercase mb-4">
+      Factory Direct Quotation
+    </p>
+
+    <h2 class="text-3xl md:text-4xl font-black leading-tight mb-5">
+      Send Your OE Number for a Fast Factory Quote
+    </h2>
+
+    <p class="max-w-2xl mx-auto text-gray-300 text-lg leading-relaxed mb-9">
+      Send us the OE or OEM reference number, vehicle application,
+      required quantity and packaging requirements. Our team will check
+      compatibility and provide factory pricing and delivery information.
+    </p>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+
+      <a href="contact-us.html"
+         class="rounded-lg bg-gold px-8 py-4 font-bold text-black transition hover:bg-white">
+        Get Factory Quote
+      </a>
+
+      <a href="https://wa.me/8615012338639?text=Hello%2C%20I%20would%20like%20to%20request%20a%20cabin%20filter%20factory%20quote.%0AOE%2FOEM%20number%3A%0AVehicle%20application%3A%0ARequired%20quantity%3A%0APackaging%20requirements%3A"
+         target="_blank"
+         rel="noopener"
+         class="rounded-lg border border-white px-8 py-4 font-bold text-white transition hover:bg-white hover:text-black">
+        Send OE Number on WhatsApp
+      </a>
+
+    </div>
+
+    <p class="text-sm font-semibold text-gray-400">
+      Yiwu Lujiesen Auto Parts Co., Ltd.
+    </p>
+
+  </div>
+</section>
 
 </main>
+  <a href="https://wa.me/8615012338639?text=Hello%2C%20I%20would%20like%20to%20request%20a%20cabin%20filter%20quotation.%0AOE%2FOEM%20number%3A%0AVehicle%20application%3A%0ARequired%20quantity%3A%0APackaging%20requirements%3A"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat with WAK ELITE on WhatsApp"
+   title="Chat with us on WhatsApp">
+  <span aria-hidden="true">☎</span>
+</a>
 </body>
 </html>
 
