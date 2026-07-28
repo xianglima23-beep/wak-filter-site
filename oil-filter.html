@@ -62,6 +62,7 @@
     }
 
     .nav-links {
+      /* HERO */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -98,7 +99,77 @@
     .nav-quote:hover {
       background: #ffca45;
     }
+/* MOBILE NAVIGATION */
 
+.mobile-nav-menu {
+  display: none;
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  list-style: none;
+}
+
+.mobile-menu-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.mobile-menu-toggle::before {
+  content: "☰";
+}
+
+.mobile-nav-menu[open] .mobile-menu-toggle::before {
+  content: "✕";
+}
+
+.mobile-menu-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 230px;
+  padding: 14px;
+  background: #0d0d0d;
+  border: 1px solid #292929;
+  border-radius: 10px;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
+  z-index: 1100;
+}
+
+.mobile-menu-panel a {
+  display: block;
+  padding: 11px 12px;
+  color: #dddddd;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.mobile-menu-panel a:hover,
+.mobile-menu-panel a.active {
+  color: #ffffff;
+  background: #1a1a1a;
+}
+
+.mobile-menu-quote {
+  margin-top: 8px;
+  background: #f0b429;
+  color: #111111 !important;
+  text-align: center;
+  font-weight: 800 !important;
+}
     /* HERO */
 
     .hero {
@@ -445,10 +516,24 @@
       }
     }
 
-    @media (max-width: 720px) {
-      .nav-quote {
-        display: none;
-      }
+   @media (max-width: 720px) {
+
+  .nav-container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-nav-menu {
+    display: block;
+  }
+
+  .nav-quote {
+    display: none;
+  }
 
       .nav-links {
         gap: 13px;
@@ -534,7 +619,27 @@
          rel="noopener">
         Get Free Quote
       </a>
+<details class="mobile-nav-menu">
+  <summary class="mobile-menu-toggle" aria-label="Open navigation menu"></summary>
 
+  <div class="mobile-menu-panel">
+    <a href="index.html">Home</a>
+    <a class="active" href="oil-filter.html">Oil Filter</a>
+    <a href="air-filter.html">Air Filter</a>
+    <a href="fuel-filter.html">Fuel Filter</a>
+    <a href="cabin-filter.html">Cabin Filter</a>
+    <a href="factory.html">Factory</a>
+    <a href="about-us.html">About</a>
+    <a href="contact-us.html">Contact</a>
+
+    <a class="mobile-menu-quote"
+       href="https://wa.me/8615012338639"
+       target="_blank"
+       rel="noopener">
+      Get Free Quote
+    </a>
+  </div>
+</details>
     </div>
   </header>
 
