@@ -466,26 +466,24 @@
         /* MOBILE MENU */
 
 .menu-toggle {
+    all: unset;
     display: none;
-    -webkit-appearance: none;
-    appearance: none;
     width: 32px;
     height: 32px;
-    padding: 0;
-    margin: 0;
-    background: transparent;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    color: #ffffff;
-    font-size: 30px;
-    line-height: 1;
+    box-sizing: border-box;
+    background: transparent !important;
+    border: 0 !important;
+    outline: 0;
+    box-shadow: none !important;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
-        .menu-toggle:focus,
+       .menu-toggle:focus,
 .menu-toggle:active {
-    background: transparent;
-    box-shadow: none;
+    background: transparent !important;
+    border: 0 !important;
+    outline: 0;
+    box-shadow: none !important;
 }
 .menu-toggle span {
     display: block;
