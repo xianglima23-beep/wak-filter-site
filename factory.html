@@ -480,8 +480,11 @@
 
 @media (max-width: 680px) {
 
-    .nav-inner {
+    ..nav-inner {
+    flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
     .menu-toggle {
         display: block;
@@ -498,7 +501,11 @@
         display: flex;
     }
 
+.nav-quote {
+    display: none;
 }
+}
+
     </style>
 </head>
 
