@@ -516,6 +516,59 @@
                 bottom: 12px;
             }
         }
+        /* MOBILE MENU */
+
+.menu-toggle {
+    all: unset;
+    display: none;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+@media (max-width: 680px) {
+
+    .nav-inner {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        order: 3;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-quote {
+        display: none;
+    }
+}
     </style>
 </head>
 
@@ -527,7 +580,11 @@
         <a class="brand" href="index.html">
             <span>WAK</span> ELITE
         </a>
-
+<div class="menu-toggle" role="button" tabindex="0" aria-label="Open navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
         <nav class="nav-links">
             <a href="index.html">Home</a>
             <a href="oil-filter.html">Oil Filter</a>
@@ -813,6 +870,20 @@
    rel="noopener">
     WhatsApp
 </a>
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+menuToggle.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        navLinks.classList.toggle('active');
+    }
+});
+</script>
 </body>
 </html>
