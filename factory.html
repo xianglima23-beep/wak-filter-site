@@ -481,20 +481,18 @@
 @media (max-width: 680px) {
 
     .nav-inner {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
+    flex-wrap: wrap;
+}
     .menu-toggle {
         display: block;
     }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    order: 3;
+}
 
     .nav-links.active {
         display: flex;
