@@ -331,6 +331,99 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       line-height: 1.7;
     }
 
+/* Wholesale Inquiry Form Design */
+.inquiry-section {
+  margin-top: 65px;
+}
+
+.inquiry-section .info-card {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 34px;
+}
+
+#whatsapp-inquiry-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 24px;
+}
+
+#whatsapp-inquiry-form p {
+  margin: 0;
+  min-width: 0;
+}
+
+#whatsapp-inquiry-form p:nth-of-type(6),
+#whatsapp-inquiry-form p:nth-of-type(7) {
+  grid-column: 1 / -1;
+}
+
+#whatsapp-inquiry-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#whatsapp-inquiry-form input,
+#whatsapp-inquiry-form textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  color: #222;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#whatsapp-inquiry-form input:focus,
+#whatsapp-inquiry-form textarea:focus {
+  outline: 2px solid #f0b429;
+  border-color: #b77c00;
+}
+
+#whatsapp-inquiry-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#whatsapp-inquiry-form button {
+  min-width: 220px;
+  min-height: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.inquiry-section .info-card > p {
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 720px) {
+  .inquiry-section .info-card {
+    padding: 22px;
+  }
+
+  #whatsapp-inquiry-form {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  #whatsapp-inquiry-form p:nth-of-type(6),
+  #whatsapp-inquiry-form p:nth-of-type(7) {
+    grid-column: auto;
+  }
+
+  #whatsapp-inquiry-form button {
+    width: 100%;
+  }
+}
+
     .site-footer {
       padding: 34px 20px;
       background: #080808;
