@@ -809,6 +809,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </a>
 
 <script>
+    
+    // Automatically fill inquiry details from the product page
+    const urlParams = new URLSearchParams(window.location.search);
+
+    const oeNumber = urlParams.get("oe");
+    const filterCategory = urlParams.get("category");
+
+    if (oeNumber) {
+        document.getElementById("model").value = oeNumber;
+    }
+
+    if (filterCategory) {
+        const categorySelect = document.getElementById("product");
+
+        if (Array.from(categorySelect.options).some(
+            option => option.value === filterCategory
+        )) {
+            categorySelect.value = filterCategory;
+        }
+    }
+
+
     document.getElementById("whatsappInquiryForm").addEventListener("submit", function(event) {
         event.preventDefault();
 
